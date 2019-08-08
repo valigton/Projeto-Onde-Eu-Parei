@@ -9,6 +9,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom'
+import NovaSerie from './NovaSerie';
 
 const Home = () =>{
   return(
@@ -17,9 +18,6 @@ const Home = () =>{
     <div className="alert alert-warning" role="alert"> Pagina em Desenvolvimento</div>
   </div>
   )
-}
-const Mensagem = () => {
-   
 }
 
 function App() {
@@ -33,6 +31,7 @@ function App() {
           <Route path='/generos/novo' exact component={NovoGenero} />
           <Route path='/generos/:id' exact component={EditarGenero} />
           <Route path='/series' exact component={Series} />
+          <Route path='/series/novo' exact component={NovaSerie} />
         </Switch>
       </div>
     </Router>

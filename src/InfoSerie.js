@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import { Redirect } from 'react-router-dom'
 
-const NovaSerie = () => {
+const InfoSerie = () => {
     const [name, setName] = useState ('')
     const [success, setSuccess] = useState(false)
     const onChange = evt => {
@@ -31,4 +31,4 @@ const NovaSerie = () => {
     </div>
     )
 }
-export default NovaSerie
+export default InfoSerie

@@ -17,8 +17,8 @@ import {
     }
     return (
       <Navbar color='light' light expand='md'>
-        <div className='container'>
-            <NavbarBrand tag={Link} to='/'>Minhas Séries</NavbarBrand>
+        
+            <NavbarBrand tag={Link} to='/'>Onde Eu Parei?</NavbarBrand>
             <NavbarToggler onClick={toggle}/>
             <Collapse isOpen={open} navbar>
               <Nav className='ml-auto' navbar>
@@ -30,7 +30,7 @@ import {
                 </NavItem>
               </Nav>
             </Collapse>
-        </div>
+        
       </Navbar>
     )
   }
