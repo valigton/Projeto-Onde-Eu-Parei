@@ -3,7 +3,7 @@ import Header from './Header'
 import Generos from './Generos'
 import NovoGenero from './NovoGenero'
 import EditarGenero from './EditarGenero'
-import axios from 'axios'
+import Series from './Series'
 import {
   BrowserRouter as Router,
   Route,
@@ -11,26 +11,28 @@ import {
 } from 'react-router-dom'
 
 const Home = () =>{
-  return <h1>Home</h1>
+  return(
+  <div className='container'>
+    <h1>Home</h1>
+    <div className="alert alert-warning" role="alert"> Pagina em Desenvolvimento</div>
+  </div>
+  )
+}
+const Mensagem = () => {
+   
 }
 
 function App() {
-  const [data, setData] = useState({})
-  useEffect(() =>{
-    axios.get('/api').then(res =>{
-      setData(res.data)
-    })
-  })
-
   return (
     <Router>
-      <div>
+      <div className='container'>
         <Header />
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/generos' exact component={Generos} />
           <Route path='/generos/novo' exact component={NovoGenero} />
           <Route path='/generos/:id' exact component={EditarGenero} />
+          <Route path='/series' exact component={Series} />
         </Switch>
       </div>
     </Router>
