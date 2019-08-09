@@ -28,7 +28,7 @@ const Series = () =>{
                 <td>{record.name}</td>
                 <td>
                     <button onClick={() => deleteSeries(record.id)} className='btn btn-danger'>Excluir</button>
-                    <Link to={'/generos/' + record.id} className='btn btn-warning' >Editar</Link>
+                    <Link to={'/series/' + record.id} className='btn btn-warning' >Info</Link>
                 </td>
             </tr>
         )
