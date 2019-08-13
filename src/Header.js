@@ -17,7 +17,6 @@ import {
     }
     return (
       <Navbar color='light' light expand='md'>
-        
             <NavbarBrand tag={Link} to='/'>Onde Eu Parei?</NavbarBrand>
             <NavbarToggler onClick={toggle}/>
             <Collapse isOpen={open} navbar>
@@ -30,7 +29,6 @@ import {
                 </NavItem>
               </Nav>
             </Collapse>
-        
       </Navbar>
     )
   }

@@ -32,10 +32,10 @@ const InfoSerie = ( {match} ) => {
     return(
         <div>
             <header>
-                <div className='h-100' style={{background: 'rgba(0,0,0,0.7)'}}>
+                <div className='h-100 container' style={{background: 'rgba(0,0,0,0.7)'}}>
                     <div className='row'>
                         <div className='col-3'>
-                            foto
+                            <img classname='img-fluid img-thumbnail container' src={data.poster}/>
                         </div>
                         <div className='col-8'>
                             titulo
